@@ -1,4 +1,5 @@
 import time
+import datetime
 
 
 def fibonacci_rec(n):
@@ -17,9 +18,11 @@ def fibonacci(n):
         fib.append(next_fib)
     return fib[n]
 
+
 def slow_function(n):
-    time.sleep(n/10)
+    time.sleep(n / 10)
     return n
+
 
 def factorial_rec(n):
     s = n / 10
@@ -28,6 +31,7 @@ def factorial_rec(n):
         return 1
     else:
         return n * factorial_rec(n - 1)
+
 
 def factorial(n):
     if n < 0:
@@ -41,10 +45,17 @@ def factorial(n):
         return result
 
 
+def now():
+    # Obtenha o tempo atual em segundos desde a época (time.time())
+    timestamp = time.time()
 
+    # Converta o timestamp em um objeto datetime
+    dt_object = datetime.datetime.fromtimestamp(timestamp)
 
+    # Extraia as horas, minutos e segundos do objeto datetime
+    hours = dt_object.hour
+    minutes = dt_object.minute
+    seconds = dt_object.second
 
-
-
-
-
+    # Exiba o resultado
+    print(f"Hora: {hours}, Minuto: {minutes}, Segundo: {seconds}")
