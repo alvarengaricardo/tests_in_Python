@@ -4,7 +4,7 @@ import time
 import functions
 
 # Defina os parâmetros que você deseja enviar para o programa.py
-param1 = 50
+param1 = 38
 start_time = time.time()
 functions.now()
 
