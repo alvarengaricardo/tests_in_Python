@@ -4,14 +4,14 @@ import time
 import functions
 
 # Defina os parâmetros que você deseja enviar para o programa.py
-param1 = 38
+
 start_time = time.time()
 functions.now()
 
 # Chame o programa.py com os parâmetros usando subprocess
 
 try:
-    result = subprocess.run(["python", "D:/developer/python/tests_in_Python/recursos/test.py", str(param1)], capture_output=True, text=True, check=True)
+    result = subprocess.run(["python", "p_unittest.py"], capture_output=True, text=True, check=True)
     # O resultado estará em result.stdout
     print("Output from program.py:", result.stdout)
 except subprocess.CalledProcessError as e:
