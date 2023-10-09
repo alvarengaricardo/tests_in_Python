@@ -11,7 +11,7 @@ functions.now()
 # Chame o programa.py com os parâmetros usando subprocess
 
 try:
-    result = subprocess.run(["python", "p_unittest.py"], capture_output=True, text=True, check=True)
+    result = subprocess.run(["python", "p_doctest.py"], capture_output=True, text=True, check=True)
     # O resultado estará em result.stdout
     print("Output from program.py:", result.stdout)
 except subprocess.CalledProcessError as e:
