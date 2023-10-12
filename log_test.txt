@@ -1,0 +1,21 @@
+Inicio do processamento de testes.
+
+------------------------------------------
+Arquivo: reference.py.
+Tempo gasto: 1027.4422512054443 segundos.
+------------------------------------------
+Arquivo: p_unittest.py.
+Tempo gasto: 1027.839863061905 segundos.
+------------------------------------------
+Arquivo: p_doctest.py.
+Tempo gasto: 1027.4949131011963 segundos.
+------------------------------------------
+Arquivo: p_multtestlib_1.py.
+Tempo gasto: 1039.683286190033 segundos.
+------------------------------------------
+Arquivo: p_multtestlib_2.py.
+Tempo gasto: 545.7186985015869 segundos.
+------------------------------------------
+Arquivo: p_multtestlib_4.py.
+Tempo gasto: 310.99978041648865 segundos.
+------------------------------------------

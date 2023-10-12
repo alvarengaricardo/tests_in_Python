@@ -5,7 +5,7 @@ import unittest
 class TestSlowFunction(unittest.TestCase):
     def test_slow_function(self):
         for i in range(0, 20):
-            for n in range(50, 151):
+            for n in range(1, 101):
                 result = functions.slow_function(n)
                 self.assertEqual(result, n)
 

@@ -8,7 +8,7 @@ def test_slow_function():
     para um intervalo de valores de n de 50 a 150.
 
     >>> for i in range(0, 20):
-    ...     for n in range(50, 151):
+    ...     for n in range(1, 101):
     ...         result = functions.slow_function(n)
     ...         assert result == n
     """
