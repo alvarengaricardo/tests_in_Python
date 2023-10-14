@@ -2,20 +2,38 @@ Inicio do processamento de testes.
 
 ------------------------------------------
 Arquivo: reference.py.
-Tempo gasto: 1027.4422512054443 segundos.
+Tempo gasto: 1025.568162202835 segundos.
 ------------------------------------------
 Arquivo: p_unittest.py.
-Tempo gasto: 1027.839863061905 segundos.
+Tempo gasto: 1025.3751242160797 segundos.
 ------------------------------------------
 Arquivo: p_doctest.py.
-Tempo gasto: 1027.4949131011963 segundos.
+Tempo gasto: 1025.4543371200562 segundos.
 ------------------------------------------
 Arquivo: p_multtestlib_1.py.
-Tempo gasto: 1039.683286190033 segundos.
+Tempo gasto: 1031.9811866283417 segundos.
 ------------------------------------------
 Arquivo: p_multtestlib_2.py.
-Tempo gasto: 545.7186985015869 segundos.
+Tempo gasto: 544.856748342514 segundos.
 ------------------------------------------
 Arquivo: p_multtestlib_4.py.
-Tempo gasto: 310.99978041648865 segundos.
+Tempo gasto: 309.65425205230713 segundos.
+------------------------------------------
+Arquivo: p_pytest.py com 1 core.
+Tempo gasto: 1027.734040737152 segundos.
+------------------------------------------
+Arquivo: p_pytest.py com 2 cores
+Tempo gasto: 524.082426071167 segundos.
+------------------------------------------
+Arquivo: p_pytest.py com 4 cores
+Tempo gasto: 266.4538850784302 segundos.
+------------------------------------------
+Arquivo: p_multtestlib2_1.py.
+Tempo gasto: 1048.8129441738129 segundos.
+------------------------------------------
+Arquivo: p_multtestlib2_2.py.
+Tempo gasto: 527.3261771202087 segundos.
+------------------------------------------
+Arquivo: p_multtestlib2_4.py.
+Tempo gasto: 260.6263029575348 segundos.
 ------------------------------------------

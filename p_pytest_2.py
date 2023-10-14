@@ -8,3 +8,5 @@ def test_slow_function(n):
         result = functions.slow_function(n)
         assert result == n
 
+if __name__ == '__main__':
+    pytest.main(["-n", "2"])  # "-n 2" permite que o pytest use 2 núcleos de CPU
