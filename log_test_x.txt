@@ -1,0 +1,6 @@
+Inicio do processamento de testes.
+
+------------------------------------------
+Arquivo: p_multtestlib2_4.py.
+Tempo gasto: 257.65753149986267 segundos.
+------------------------------------------
