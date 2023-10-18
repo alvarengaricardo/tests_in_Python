@@ -2,38 +2,47 @@ Inicio do processamento de testes.
 
 ------------------------------------------
 Arquivo: reference.py.
-Tempo gasto: 1025.568162202835 segundos.
+Tempo gasto: 1026.6472661495209 segundos.
 ------------------------------------------
 Arquivo: p_unittest.py.
-Tempo gasto: 1025.3751242160797 segundos.
+Tempo gasto: 1027.2976396083832 segundos.
 ------------------------------------------
 Arquivo: p_doctest.py.
-Tempo gasto: 1025.4543371200562 segundos.
+Tempo gasto: 1027.1479082107544 segundos.
 ------------------------------------------
 Arquivo: p_multtestlib_1.py.
-Tempo gasto: 1031.9811866283417 segundos.
+Tempo gasto: 1036.503598690033 segundos.
 ------------------------------------------
 Arquivo: p_multtestlib_2.py.
-Tempo gasto: 544.856748342514 segundos.
+Tempo gasto: 546.4115278720856 segundos.
 ------------------------------------------
 Arquivo: p_multtestlib_4.py.
-Tempo gasto: 309.65425205230713 segundos.
+Tempo gasto: 309.7306954860687 segundos.
 ------------------------------------------
 Arquivo: p_pytest.py com 1 core.
-Tempo gasto: 1027.734040737152 segundos.
+Tempo gasto: 1029.7411766052246 segundos.
 ------------------------------------------
 Arquivo: p_pytest.py com 2 cores
-Tempo gasto: 524.082426071167 segundos.
+Tempo gasto: 525.5182521343231 segundos.
 ------------------------------------------
 Arquivo: p_pytest.py com 4 cores
-Tempo gasto: 266.4538850784302 segundos.
+Tempo gasto: 266.96486592292786 segundos.
 ------------------------------------------
 Arquivo: p_multtestlib2_1.py.
-Tempo gasto: 1048.8129441738129 segundos.
+Tempo gasto: 1029.2224564552307 segundos.
 ------------------------------------------
 Arquivo: p_multtestlib2_2.py.
-Tempo gasto: 527.3261771202087 segundos.
+Tempo gasto: 515.8570597171783 segundos.
 ------------------------------------------
 Arquivo: p_multtestlib2_4.py.
-Tempo gasto: 260.6263029575348 segundos.
+Tempo gasto: 259.2812867164612 segundos.
+------------------------------------------
+Arquivo: p_multtestlib3_1.py.
+Tempo gasto: 1028.7347872257233 segundos.
+------------------------------------------
+Arquivo: p_multtestlib3_2.py.
+Tempo gasto: 514.4942374229431 segundos.
+------------------------------------------
+Arquivo: p_multtestlib3_4.py.
+Tempo gasto: 257.77470541000366 segundos.
 ------------------------------------------
