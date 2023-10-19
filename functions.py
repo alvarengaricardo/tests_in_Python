@@ -59,3 +59,7 @@ def now():
 
     # Exiba o resultado
     print(f"Hora: {hours}, Minuto: {minutes}, Segundo: {seconds}")
+
+
+def soma(a, b):
+    return (a + b)
