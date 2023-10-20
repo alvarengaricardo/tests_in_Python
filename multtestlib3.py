@@ -11,15 +11,43 @@ def test_equal(cpus, input1, expected, process_function=None, input2=None):
         line = line1a('test_equal', process_function, input_item, result, expected_item)
         filepass(line) if result == expected_item else filefail(line)
 
+    def run_test2(input_item, expected_item):
+        if process_function:
+            if input2 is not None:
+                result = process_function(input_item, input2)
+            else:
+                result = process_function(input_item)
+        else:
+            result = input_item
+        line = line1c('test_equal', input_item, result, expected_item)
+        filepass(line) if result == expected_item else filefail(line)
+
+    def run_test3(input_item, expected_item, input2_item):
+        result = process_function(input_item, input2_item)
+        line = line1b('test_equal', process_function, input_item, input2_item, result, expected_item)
+        filepass(line) if result == expected_item else filefail(line)
+
     if not isinstance(input1, list):
         input1 = [input1]
     if not isinstance(expected, list):
         expected = [expected]
 
-    if input2 is None:
+    if (input2 is None) and (process_function is not None):
         with ThreadPoolExecutor(max_workers=cpus) as executor:
             for input_item, expected_item in zip(input1, expected):
                 executor.submit(run_test1, input_item, expected_item, process_function)
+
+    if (input2 is None) and (process_function is None):
+        with ThreadPoolExecutor(max_workers=cpus) as executor:
+            for input_item, expected_item in zip(input1, expected):
+                executor.submit(run_test2, input_item, expected_item)
+
+    if (input2 is not None) and (process_function is not None):
+        if not isinstance(input2, list):
+            input2 = [input2]
+        with ThreadPoolExecutor(max_workers=cpus) as executor:
+            for input_item, expected_item, input2_item in zip(input1, expected, input2):
+                executor.submit(run_test3, input_item, expected_item, input2_item)
 
 
 def test_not_equal(a, b):
@@ -30,21 +58,21 @@ def test_not_equal(a, b):
         future.result()
 
 
-def line1a(t, ff, input, result, expected):
+def line1a(test, ff, input, result, expected):
     # line1('test_equal', process_function, input_item, result, expected_item)
-    return (str(t) + ' - ' + str(ff.__name__) + ' - ' + 'input: ' + str(input) + ' - ' + 'expected: ' + str(
+    return (str(test) + ' - ' + str(ff.__name__) + ' - ' + 'input: ' + str(input) + ' - ' + 'expected: ' + str(
         expected) + ' - ' + 'received: ' + str(result) + ' - ' + 'Result: ')
 
 
-def line1b(t, ff, input, input2, result, expected):
-    # line1('test_equal', process_function, input_item, input2[0], result, expected_item)
-    return (str(t) + str(ff.__name__) + ' input: ' + str(input) + ' input2: ' + str(input2) + ' expected: ' + str(
-        expected) + ' received: ' + str(result) + ' Result: ')
+def line1b(test, ff, input, input2, result, expected):
+    # line1b('test_equal', process_function, input_item, input2[0], result, expected_item)
+    return (str(test) + ' - ' + str(ff.__name__) + ' - ' + 'input1: ' + str(input) + ' - ' + 'input2: ' + str(
+        input2) + ' - ' + 'expected: ' + str(
+        expected) + ' - ' + 'received: ' + str(result) + ' - ' + 'Result: ')
 
 
-def line1c(t, input, result, expected):
-    # line1('test_equal', process_function, input_item, input2[0], result, expected_item)
-    return (str(t) + ' input: ' + str(input) + ' expected: ' + str(
+def line1c(test, input, result, expected):
+    return (str(test) + ' input: ' + str(input) + ' expected: ' + str(
         expected) + ' received: ' + str(result) + ' Result: ')
 
 

@@ -31,7 +31,7 @@ end_time = time.time()
 functions.now()
 elapsed_time = end_time - start_time
 print(f"Tempo gasto: {elapsed_time} segundos.")
-'''
+
 ###################################################################################################
 print("*****************************************************************************")
 print("teste de fatoriais usando int:")
@@ -68,13 +68,19 @@ print("comparando dois vetores:")
 start_time = time.time()
 functions.now()
 params = []
+paramsx = []
 # for a in range(0, 20):
 for b in range(1, 51):
     params.append(b)
+for x in range(1, 51):
+    if x == 42:
+        paramsx.append(41)
+    else:
+        paramsx.append(x)
 
 print(params)
 
-mtl.test_equal(cpus, params, params)
+mtl.test_equal(cpus, params, paramsx)
 
 end_time = time.time()
 functions.now()
@@ -93,7 +99,10 @@ expected = []
 for a in range(1, 51):
     input1.append(a)
 for b in range(1, 51):
-    input2.append(b)
+    if b == 42:
+        input2.append(10)
+    else:
+        input2.append(b)
 for c in range(1, 51):
     expected.append(c + c)
 print(input1)
@@ -114,6 +123,7 @@ print("*************************************************************************
 
 mtl.test_equal(4, 1, 2, functions.soma, 1)
 mtl.test_equal(1, 5, 121, functions.factorial_rec)
+mtl.test_equal(1, 5, 120, functions.factorial_rec)
 
-'''
+
 
