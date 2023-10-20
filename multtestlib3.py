@@ -7,22 +7,13 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 def test_equal(cpus, input1, expected, process_function=None, input2=None):
-    def run_test1(input_item, expected_item, process_function=None):
-        if process_function:
-            result = process_function(input_item)
-        else:
-            result = input_item
+    def run_test1(input_item, expected_item, process_function):
+        result = process_function(input_item)
         line = line1a('test_equal', process_function, input_item, result, expected_item)
         filepass(line) if result == expected_item else filefail(line)
 
     def run_test2(input_item, expected_item):
-        if process_function:
-            if input2 is not None:
-                result = process_function(input_item, input2)
-            else:
-                result = process_function(input_item)
-        else:
-            result = input_item
+        result = input_item
         line = line1c('test_equal', input_item, result, expected_item)
         filepass(line) if result == expected_item else filefail(line)
 
