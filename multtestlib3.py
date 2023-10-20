@@ -1,5 +1,9 @@
-from concurrent.futures import ThreadPoolExecutor
 import os
+from concurrent.futures import ThreadPoolExecutor
+
+
+
+### ISSO FUNCIONA !!!!!!
 
 
 def test_equal(cpus, input1, expected, process_function=None, input2=None):
@@ -48,6 +52,7 @@ def test_equal(cpus, input1, expected, process_function=None, input2=None):
         with ThreadPoolExecutor(max_workers=cpus) as executor:
             for input_item, expected_item, input2_item in zip(input1, expected, input2):
                 executor.submit(run_test3, input_item, expected_item, input2_item)
+
 
 
 def test_not_equal(a, b):
