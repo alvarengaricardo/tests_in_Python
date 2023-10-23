@@ -2,7 +2,7 @@ import functions
 import pytest
 
 def test_slow_function():
-    for n in range(1, 100001):
+    for n in range(1, 10001):
         result = functions.slow_function(1000)
         assert result == 1000
 

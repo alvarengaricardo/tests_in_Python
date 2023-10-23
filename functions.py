@@ -20,7 +20,7 @@ def fibonacci(n):
 
 
 def slow_function(n):
-    time.sleep(n / n)
+    time.sleep(1 / n)
     return n
 
 

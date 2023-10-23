@@ -6,7 +6,7 @@ def main():
     cpus = 4
     # Criar a lista "values" usando um loop "for"
     values = []
-    for x in range(1, 100001):
+    for x in range(1, 10001):
         values.append(1000)
 
 
