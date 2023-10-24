@@ -4,12 +4,13 @@ import functions
 
 # arquivo de log
 arquivo = open("log_test_mult.txt", "w")
-arquivo.write("Inicio do processamento de testes.\n\n")
+arquivo.write("Inicio do processamento de testes.\n")
+arquivo.write("10000 repetições de 1/1000s.\n\n")
 arquivo.write("------------------------------------------\n")
 print("Inicio do processamento de testes.")
 functions.now()
 
-nome = "p_pytest.py"
+nome = "p_pytest_4_100.py"
 try:
     print(f"Arquivo: {nome}")
     arquivo.write(f"Arquivo: {nome} com 1 core.\n")
@@ -27,7 +28,7 @@ except subprocess.CalledProcessError as e:
 
 #----------------------------------------------------------------------------
 
-nome = "p_pytest.py"
+nome = "p_pytest_4_100.py"
 try:
     print(f"Arquivo: {nome}")
     arquivo.write(f"Arquivo: {nome} com 2 cores\n")
@@ -45,7 +46,7 @@ except subprocess.CalledProcessError as e:
 
 #----------------------------------------------------------------------------
 
-nome = "p_pytest.py"
+nome = "p_pytest_4_100.py"
 try:
     print(f"Arquivo: {nome}")
     arquivo.write(f"Arquivo: {nome} com 4 cores\n")
