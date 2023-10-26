@@ -1,4 +1,4 @@
-import multtestlib3 as mtl3
+from recursos.testes_pacotes import multtestlib3 as mtl3
 import functions
 
 def main():
