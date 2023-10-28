@@ -17,7 +17,7 @@ try:
     start_time = time.time()
     result = subprocess.run(["python", nome], capture_output=True, text=True, check=True)
     # O resultado estará em result.stdout
-    #print("Output from program.py:", result.stdout)
+    print("Output from program.py:", result.stdout)
     end_time = time.time()
     functions.now()
     elapsed_time = end_time - start_time
