@@ -1,0 +1,9 @@
+Inicio do processamento de testes.
+
+------------------------------------------
+Arquivo: p_pytest.py com 4 cores
+Tempo gasto: 53.47831892967224 segundos.
+------------------------------------------
+Arquivo: p_multtestlib3_4.py.
+Tempo gasto: 31.206302642822266 segundos.
+------------------------------------------

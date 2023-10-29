@@ -1,0 +1,4 @@
+Inicio do processamento de testes.
+
+------------------------------------------
+Arquivo: reference.py.
