@@ -9,8 +9,9 @@ def main():
     for i in range(0, 20):
         for x in range(1, 101):
             values.append(x)
-
+    functions.now()
     mtl3.test_equal(cpus, values, values, functions.slow_function)
+    functions.now()
 
 
 if __name__ == "__main__":
