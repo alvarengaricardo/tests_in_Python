@@ -7,8 +7,8 @@ def main():
 # Criar a lista "values" usando um loop "for"
     values = []
     print("antes do for")
-    for i in range(0, 20):
-        for x in range(1, 101):
+    for i in range(0, 5):
+        for x in range(1, 5):
             values.append(x)
 
     print("depois do for")
