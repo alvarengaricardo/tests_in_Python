@@ -12,13 +12,13 @@ def main():
         for x in range(1, 101):
             values.append(x)
 
-    functions.now()
-    start_time = time.time()
+    #functions.now()
+    #start_time = time.time()
     mtl3.test_equal(cpus, values, "", values, functions.slow_function)
-    end_time = time.time()
-    functions.now()
-    elapsed_time = end_time - start_time
-    print(f"Tempo gasto: {elapsed_time} segundos.")
+    #end_time = time.time()
+    #functions.now()
+    #elapsed_time = end_time - start_time
+    #print(f"Tempo gasto: {elapsed_time} segundos.")
 
 
 if __name__ == "__main__":

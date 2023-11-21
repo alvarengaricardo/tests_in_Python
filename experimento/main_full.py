@@ -3,7 +3,7 @@ import time
 import functions
 
 # arquivo de log
-arquivo = open("log_test_full_cenario_1.txt", "w")
+arquivo = open("log_test_full_cenario_2_aprimorado.txt", "w")
 arquivo.write("Inicio do processamento de testes.\n\n")
 arquivo.write("------------------------------------------\n")
 print("Inicio do processamento de testes.")
