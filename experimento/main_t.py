@@ -14,9 +14,9 @@ functions.now()
 nome = "p_pytest.py"
 try:
     print(f"Arquivo: {nome}")
-    arquivo.write(f"Arquivo: {nome} com 4 cores\n")
+    arquivo.write(f"Arquivo: {nome} com 128 cores\n")
     start_time = time.time()
-    command = ["pytest", "-n", "4", "p_pytest.py"]
+    command = ["pytest", "-n", "128", "p_pytest.py"]
     result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     end_time = time.time()
     functions.now()
@@ -29,7 +29,7 @@ except subprocess.CalledProcessError as e:
 
 # ----------------------------------------------------------------------------
 
-nome = "p_multtestlib3_4.py"
+nome = "p_multtestlib3_8.py"
 try:
     print(f"Arquivo: {nome}")
     arquivo.write(f"Arquivo: {nome}.\n")
