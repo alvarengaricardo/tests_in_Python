@@ -1,5 +1,5 @@
 import time
-from recursos.testes_pacotes import multtestlib3 as mtl3
+import multtestlib3 as mtl3
 import functions
 
 

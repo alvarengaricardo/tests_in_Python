@@ -16,7 +16,7 @@ try:
     print(f"Arquivo: {nome}")
     arquivo.write(f"Arquivo: {nome} com 128 cores\n")
     start_time = time.time()
-    command = ["pytest", "-n", "128", "p_pytest.py"]
+    command = ["pytest", "-n", "8", "p_pytest.py"]
     result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     end_time = time.time()
     functions.now()
