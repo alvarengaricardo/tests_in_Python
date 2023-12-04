@@ -1,5 +1,6 @@
 import functions
 import unittest
+import time
 
 
 class TestSlowFunction(unittest.TestCase):
@@ -11,4 +12,8 @@ class TestSlowFunction(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    start_time = time.time()
     unittest.main()
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Tempo gasto: {elapsed_time} segundos.")

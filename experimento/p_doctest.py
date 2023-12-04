@@ -1,4 +1,5 @@
 import functions
+import time
 
 def test_slow_function():
     """
@@ -16,4 +17,8 @@ def test_slow_function():
 
 if __name__ == '__main__':
     import doctest
+    start_time = time.time()
     doctest.testmod()
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Tempo gasto: {elapsed_time} segundos.")
