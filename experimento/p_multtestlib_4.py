@@ -1,3 +1,4 @@
+import time
 import multtestlib
 import functions
 
@@ -110,7 +111,11 @@ def main():
 
 
 if __name__ == "__main__":
+    start_time = time.time()
     multtestlib.init()
     multtestlib.freeze_support()
     main()
     multtestlib.end()
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Tempo gasto: {elapsed_time} segundos.")
