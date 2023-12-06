@@ -111,11 +111,11 @@ def main():
 
 
 if __name__ == "__main__":
-    start_time = time.time()
     multtestlib.init()
     multtestlib.freeze_support()
+    start_time = time.time()
     main()
-    multtestlib.end()
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Tempo gasto: {elapsed_time} segundos.")
+    multtestlib.end()

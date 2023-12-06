@@ -1,5 +1,5 @@
 import time
-from experimento import multtestlib3 as mtl3
+import multtestlib3 as mtl3
 
 
 def slow_function(n):
@@ -26,7 +26,7 @@ def main():
     teste(32, vetor)
     teste(64, vetor)
     teste(128, vetor)
-
+    teste(256, vetor)
 
 if __name__ == "__main__":
     mtl3.init()
