@@ -10,10 +10,8 @@ def main():
         for x in range(1, 101):
             values.append(x)
 
-    values2 = sorted(values, reverse=True)
-    print(values2)
     start_time = time.time()
-    mtl3.test_equal(cpus, values2, "", values2, functions.slow_function)
+    mtl3.test_equal(cpus, values, "", values, functions.slow_function)
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Tempo gasto: {elapsed_time} segundos.")
