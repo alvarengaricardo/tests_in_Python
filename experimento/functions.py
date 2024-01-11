@@ -23,9 +23,9 @@ def slow_function(n):
     # cenário 1: n/100
     # time.sleep(n / 100)
     # cenário 2: 1/10
-    # time.sleep(1 / 10)
+    time.sleep(1 / 10)
     # cenário 3: 1/3
-    time.sleep(1/3)
+    # time.sleep(1/3)
     return n
 
 
